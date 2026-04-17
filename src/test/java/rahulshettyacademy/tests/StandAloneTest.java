@@ -20,7 +20,7 @@ public class StandAloneTest {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
-                  //practice cicd5
+                  //practice cicd6
 		String productName = "ZARA COAT 3";
 		//WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
