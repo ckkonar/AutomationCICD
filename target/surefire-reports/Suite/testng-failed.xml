@@ -8,6 +8,7 @@
     <classes>
       <class name="rahulshettyacademy.tests.ErrorValidationsTest">
         <methods>
+          <include name="LoginErrorValidation"/>
           <include name="tearDown"/>
           <include name="ProductErrorValidation"/>
           <include name="launchApplication"/>
@@ -21,7 +22,7 @@
         <methods>
           <include name="OrderHistoryTest"/>
           <include name="tearDown"/>
-          <include name="submitOrder" invocation-numbers="0"/>
+          <include name="submitOrder"/>
           <include name="launchApplication"/>
         </methods>
       </class> <!-- rahulshettyacademy.tests.SubmitOrderTest -->
