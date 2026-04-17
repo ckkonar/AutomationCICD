@@ -35,8 +35,9 @@ public class CartPage extends AbstractComponent {
 
 	}
 
-	public CheckoutPage goToCheckout() {
-		windowScrollHeight();
+	public CheckoutPage goToCheckout() throws InterruptedException {
+		//windowScrollHeight();
+		windowScrollMiddle();
 		waitForElementToAppear(checkoutButton);
 		checkoutEle.click();
 		return new CheckoutPage(driver);

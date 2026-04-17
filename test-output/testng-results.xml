@@ -1,79 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-17T03:08:57 IST" name="Default suite" finished-at="2026-04-17T03:08:58 IST" duration-ms="728">
+  <suite started-at="2026-04-17T16:12:14 IST" name="Default suite" finished-at="2026-04-17T16:12:40 IST" duration-ms="25778">
     <groups>
       <group name="Purchase">
         <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4b2bac3f]" name="submitOrder" class="rahulshettyacademy.tests.SubmitOrderTest"/>
       </group> <!-- Purchase -->
     </groups>
-    <test started-at="2026-04-17T03:08:57 IST" name="Default test" finished-at="2026-04-17T03:08:58 IST" duration-ms="728">
+    <test started-at="2026-04-17T16:12:14 IST" name="Default test" finished-at="2026-04-17T16:12:40 IST" duration-ms="25778">
       <class name="rahulshettyacademy.tests.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4b2bac3f]" started-at="2026-04-17T03:08:58 IST" name="launchApplication" finished-at="2026-04-17T03:08:58 IST" duration-ms="77" status="FAIL">
-          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
-            <message>
-              <![CDATA[Unable to obtain: chromedriver, error chromedriver must exist: C:\Users\CHANDAN KONAR\Documents\chromedriver-win64\chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: driver.version: ChromeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: C:\Users\CHANDAN KONAR\Documents\chromedriver-win64\chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: driver.version: ChromeDriver
-at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
-at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
-at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:107)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:76)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-at rahulshettyacademy.TestComponents.BaseTest.initializeDriver(BaseTest.java:66)
-at rahulshettyacademy.TestComponents.BaseTest.launchApplication(BaseTest.java:117)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:611)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: C:\Users\CHANDAN KONAR\Documents\chromedriver-win64\chromedriver.exe
-at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:402)
-at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:120)
-... 37 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4b2bac3f]" started-at="2026-04-17T16:12:14 IST" name="launchApplication" finished-at="2026-04-17T16:12:19 IST" duration-ms="4880" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4b2bac3f]" started-at="2026-04-17T03:08:58 IST" name="submitOrder" data-provider="getData" finished-at="2026-04-17T03:08:58 IST" duration-ms="0" status="SKIP">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4b2bac3f]" started-at="2026-04-17T16:12:19 IST" name="submitOrder" data-provider="getData" finished-at="2026-04-17T16:12:27 IST" duration-ms="7832" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,177 +22,18 @@ at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.j
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
-            <message>
-              <![CDATA[Unable to obtain: chromedriver, error chromedriver must exist: C:\Users\CHANDAN KONAR\Documents\chromedriver-win64\chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: driver.version: ChromeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: C:\Users\CHANDAN KONAR\Documents\chromedriver-win64\chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: driver.version: ChromeDriver
-at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
-at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
-at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:107)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:76)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-at rahulshettyacademy.TestComponents.BaseTest.initializeDriver(BaseTest.java:66)
-at rahulshettyacademy.TestComponents.BaseTest.launchApplication(BaseTest.java:117)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:611)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: C:\Users\CHANDAN KONAR\Documents\chromedriver-win64\chromedriver.exe
-at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:402)
-at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:120)
-... 37 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4b2bac3f]" started-at="2026-04-17T03:08:58 IST" name="tearDown" finished-at="2026-04-17T03:08:58 IST" duration-ms="9" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null
-at rahulshettyacademy.TestComponents.BaseTest.tearDown(BaseTest.java:127)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:815)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:633)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4b2bac3f]" started-at="2026-04-17T16:12:27 IST" name="tearDown" finished-at="2026-04-17T16:12:27 IST" duration-ms="299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4b2bac3f]" started-at="2026-04-17T03:08:58 IST" name="launchApplication" finished-at="2026-04-17T03:08:58 IST" duration-ms="5" status="FAIL">
-          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
-            <message>
-              <![CDATA[Unable to obtain: chromedriver, error chromedriver must exist: C:\Users\CHANDAN KONAR\Documents\chromedriver-win64\chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: driver.version: ChromeDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: C:\Users\CHANDAN KONAR\Documents\chromedriver-win64\chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: driver.version: ChromeDriver
-at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
-at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
-at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:107)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:76)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-at rahulshettyacademy.TestComponents.BaseTest.initializeDriver(BaseTest.java:66)
-at rahulshettyacademy.TestComponents.BaseTest.launchApplication(BaseTest.java:117)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:611)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: C:\Users\CHANDAN KONAR\Documents\chromedriver-win64\chromedriver.exe
-at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:402)
-at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:120)
-... 37 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4b2bac3f]" started-at="2026-04-17T16:12:27 IST" name="launchApplication" finished-at="2026-04-17T16:12:31 IST" duration-ms="4054" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4b2bac3f]" started-at="2026-04-17T03:08:58 IST" name="submitOrder" data-provider="getData" finished-at="2026-04-17T03:08:58 IST" duration-ms="0" status="SKIP">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4b2bac3f]" started-at="2026-04-17T16:12:31 IST" name="submitOrder" data-provider="getData" finished-at="2026-04-17T16:12:39 IST" duration-ms="7888" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -259,36 +41,47 @@ at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.j
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[Unable to obtain: chromedriver, error chromedriver must exist: C:\Users\CHANDAN KONAR\Documents\chromedriver-win64\chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: '4.41.0', revision: '9fc754f'
+              <![CDATA[element click intercepted: Element is not clickable at point (1040, 546)
+  (Session info: chrome=147.0.7727.102)
+Build info: version: '4.43.0', revision: 'dd0f534'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: driver.version: ChromeDriver]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d6c61c6b2412b60f2c14844c0581c68b, clickElement {id=f.8C441705FCC2256AE1409FE9AD18CF40.d.A0A9F5576F61F8F5B7F1D2AFEB509FFD.e.75}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\CHANDA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51052}, goog:processID: 16920, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51052/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d6c61c6b2412b60f2c14844c0581c68b)] -> css selector: .totalRow button]
+Session ID: d6c61c6b2412b60f2c14844c0581c68b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: chromedriver, error chromedriver must exist: C:\Users\CHANDAN KONAR\Documents\chromedriver-win64\chromedriver.exe
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
-Build info: version: '4.41.0', revision: '9fc754f'
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1040, 546)
+  (Session info: chrome=147.0.7727.102)
+Build info: version: '4.43.0', revision: 'dd0f534'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: driver.version: ChromeDriver
-at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
-at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
-at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:107)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:76)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
-at rahulshettyacademy.TestComponents.BaseTest.initializeDriver(BaseTest.java:66)
-at rahulshettyacademy.TestComponents.BaseTest.launchApplication(BaseTest.java:117)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d6c61c6b2412b60f2c14844c0581c68b, clickElement {id=f.8C441705FCC2256AE1409FE9AD18CF40.d.A0A9F5576F61F8F5B7F1D2AFEB509FFD.e.75}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.102, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\CHANDA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51052}, goog:processID: 16920, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51052/devtoo..., se:cdpVersion: 147.0.7727.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d6c61c6b2412b60f2c14844c0581c68b)] -> css selector: .totalRow button]
+Session ID: d6c61c6b2412b60f2c14844c0581c68b
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at rahulshettyacademy.pageobjects.CartPage.goToCheckout(CartPage.java:41)
+at rahulshettyacademy.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:48)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:611)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
@@ -311,62 +104,17 @@ at org.testng.TestNG.run(TestNG.java:1079)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.IllegalStateException: chromedriver must exist: C:\Users\CHANDAN KONAR\Documents\chromedriver-win64\chromedriver.exe
-at org.openqa.selenium.internal.Require$PathStateChecker.isExecutable(Require.java:402)
-at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:120)
-... 37 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4b2bac3f]" started-at="2026-04-17T03:08:58 IST" name="tearDown" finished-at="2026-04-17T03:08:58 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null
-at rahulshettyacademy.TestComponents.BaseTest.tearDown(BaseTest.java:127)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:846)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:815)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:633)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4b2bac3f]" started-at="2026-04-17T16:12:39 IST" name="tearDown" finished-at="2026-04-17T16:12:40 IST" duration-ms="308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="OrderHistoryTest()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4b2bac3f]" started-at="2026-04-17T03:08:58 IST" name="OrderHistoryTest" finished-at="2026-04-17T03:08:58 IST" depends-on-methods="rahulshettyacademy.tests.SubmitOrderTest.submitOrder" duration-ms="0" status="SKIP">
+        <test-method signature="OrderHistoryTest()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4b2bac3f]" started-at="2026-04-17T16:12:40 IST" name="OrderHistoryTest" finished-at="2026-04-17T16:12:40 IST" depends-on-methods="rahulshettyacademy.tests.SubmitOrderTest.submitOrder" duration-ms="1" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method rahulshettyacademy.tests.SubmitOrderTest.OrderHistoryTest() on instance rahulshettyacademy.tests.SubmitOrderTest@4b2bac3f depends on not successfully finished methods 

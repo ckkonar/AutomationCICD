@@ -44,7 +44,7 @@ public class StepDefinitionImpl extends BaseTest{
 	}
 	
 	@When("^Checkout (.+) and submit the order$")
-	public void checkout_submit_order(String productName)
+	public void checkout_submit_order(String productName) throws InterruptedException
 	{
 		CartPage cartPage = productCatalogue.goToCartPage();
 
